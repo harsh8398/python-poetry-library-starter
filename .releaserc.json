@@ -1,0 +1,26 @@
+{
+  "branches": [
+    "+([0-9])?(.{+([0-9]),x}).x",
+    "main",
+    { "name": "develop", "prerelease": true }
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "poetry build",
+        "publishCmd": "poetry publish -r test  -u $PYPI_USERNAME -p $PYPI_PASSWORD",
+        "shell": "bash"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": ["dist/**"]
+      }
+    ],
+    "@semantic-release/git"
+  ]
+}

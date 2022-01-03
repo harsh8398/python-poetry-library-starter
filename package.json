@@ -1,0 +1,26 @@
+{
+  "name": "python-poetry-library-starter",
+  "version": "1.0.0",
+  "description": "A template for python projects",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh8398/python-poetry-library-starter.git"
+  },
+  "author": "Harsh Patel <pharsh58@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harsh8398/python-poetry-library-starter/issues"
+  },
+  "homepage": "https://github.com/harsh8398/python-poetry-library-starter#readme",
+  "devDependencies": {
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^18.0.1"
+  }
+}
