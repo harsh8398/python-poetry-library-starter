@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-poetry-library-starter"
-version = "1.0.0"
+version = "1.1.0"
 description = ""
 authors = ["harsh8398 <pharsh58@gmail.com>"]
 
